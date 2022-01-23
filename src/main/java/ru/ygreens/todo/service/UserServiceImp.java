@@ -4,14 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import ru.ygreens.todo.dto.UserRegistrationDTO;
-import ru.ygreens.todo.entity.ERole;
-import ru.ygreens.todo.entity.Role;
 import ru.ygreens.todo.entity.User;
 import ru.ygreens.todo.exception.FailedToCreateEntityException;
-import ru.ygreens.todo.repository.RoleRepository;
 import ru.ygreens.todo.repository.UserRepository;
-
-import java.util.Optional;
 
 @Service
 public class UserServiceImp extends BaseEntityServiceImp<User, UserRepository> implements UserService {
